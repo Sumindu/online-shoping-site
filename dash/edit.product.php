@@ -29,6 +29,15 @@ if (isset($_POST['name']) && isset($_POST['des']) && isset($_POST['price']) && i
     $imgurl = $_FILES['image']['name'];
     $imgtmp = $_FILES['image']['tmp_name'];
 
+    // Get the old image URL
+    $sql_old_img = "SELECT imgurl FROM products WHERE id = '$id'";
+    $result_old_img = mysqli_query($conn, $sql_old_img);
+    if ($row_old_img = mysqli_fetch_assoc($result_old_img)) {
+        $old_img_url = $row_old_img['imgurl'];
+        // Delete the old image file
+        unlink("../img/$old_img_url");
+    }
+
     // Move the uploaded image to the img folder
     move_uploaded_file($imgtmp, "../img/$imgurl");
 
@@ -42,6 +51,7 @@ if (isset($_POST['name']) && isset($_POST['des']) && isset($_POST['price']) && i
         exit();
     }
 }
+
 
 ?>
 <div class="form">
