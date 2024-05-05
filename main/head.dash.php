@@ -40,7 +40,7 @@
         </div>
         <ul class="sidebar-list">
             <li class="sidebar-list-item <?php echo ($currentPage == '.php') ? 'active' : ''; ?>">
-                <a href="../index.html">
+                <a href="../index.php">
                     <span>Home</span>
                 </a>
             </li>

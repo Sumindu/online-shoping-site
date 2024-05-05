@@ -18,10 +18,11 @@
     <div>
       <ul id="navbar">
         <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="guestabout.html">About Us</a></li>
         <li><a href="main/shop.php">Shop</a></li>
         <li><a href="main/cart.php">Cart</a></li>
-        <li><a href="php/fnc.logout.php">Logout</a></li>
+        <li><a href="main/feedback.php">Feedback</a></li>
+        <li><a href="guestabout.html">About Us</a></li>
+        <li><a href="login.php">Login</a></li>
       </ul>
     </div>
   </section>
@@ -44,14 +45,6 @@
     <img class="mySlides w3-animate-fading" src="img/2.jpg" style="width:100%">
     <img class="mySlides w3-animate-fading" src="img/3.jpg" style="width:100%">
     <img class="mySlides w3-animate-fading" src="img/4.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="img/5.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="img/6.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="img/7.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="img/8.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="img/9.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="img/10.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="img/11.jpg" style="width:100%">
-
   </div>
  
   <section>
@@ -59,26 +52,28 @@
         <div class="box">
           <img src="img/b2.jpg" style="width: 100%; height: 100%; margin: auto;"> 
           <div class="card-body">
-            <p class="card-text">Electronics</p>
+            <p class="card-text">Electronic Devices</p>
           </div>
-        </div>
-        <div class="box">
-        <img src="img/b3.jpg" style="width: 100%; height: 100%; margin: auto;"> 
-        <div class="card-body">
-          <p class="card-text">Mobile Phones</p>
-        </div>
-        </div>
-        <div class="box">
-        <img src="img/b5.jpg" style="width: 100%; height: 100%; margin: auto;">
-        <div class="card-body">
-          <p class="card-text">Clothes</p>
-        </div>
-        </div>
+          </div>
+          <div class="box">
+            <img src="img/b3.jpg" style="width: 100%; height: 100%; margin: auto;"> 
+            <div class="card-body">
+              <p class="card-text">Health And Beauty</p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="img/b5.jpg" style="width: 100%; height: 100%; margin: auto;">
+            <div class="card-body">
+              <p class="card-text">Sports And Outdoor</p>
+            </div>
+          </div>
 
-        <div class="box" >
-        <img src="img/b1.jpg" style="width: 100%; height: 100%; margin: auto;" >
-        <div class="card-body">
-        <p class="card-text">Accessories</p>
+          <div class="box">
+            <img src="img/b1.jpg" style="width: 100%; height: 100%; margin: auto;">
+            <div class="card-body">
+              <p class="card-text">Baby And Toys</p>
+            </div>
+          </div>
       </div>
   </section>
 
