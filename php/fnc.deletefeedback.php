@@ -10,7 +10,7 @@ if (isset($_GET['delete'])) {
     $sql = "DELETE FROM feedback WHERE id = '$delete'";
     
     if(mysqli_query($conn,$sql)) {
-        echo '<script> location.replace("../dash/feedback.php")</script>'; 
+        echo '<script> location.replace("../dash/feedback.php?error=Deletion successful")</script>'; 
         exit();
     } else{
         header("Location: ../dash/feedback.php?error=Database error");

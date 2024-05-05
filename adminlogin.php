@@ -37,7 +37,7 @@
                     $_SESSION['email'] = $row['email'];
                     $_SESSION['name'] = $row['name'];
                     $_SESSION['a_id'] = 1;
-                    header("Location: dash/users.php");
+                    header("Location: dash/users.php?success=Your Log in successful");
                     exit();
                 } else {
                     $error = "Incorrect Email or Password";

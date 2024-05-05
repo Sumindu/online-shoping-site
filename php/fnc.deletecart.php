@@ -10,7 +10,7 @@ if (isset($_GET['delete'])) {
     $sql = "DELETE FROM cart WHERE id = '$delete'";
     
     if(mysqli_query($conn,$sql)) {
-        echo '<script> location.replace("../main/cart.php")</script>'; 
+        echo '<script> location.replace("../main/cart.php?error=Deletion successful")</script>'; 
         exit();
     } else{
         header("Location: ../main/cart.php?error=Database error");

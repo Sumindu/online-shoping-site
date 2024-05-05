@@ -14,6 +14,22 @@
     $name = $_SESSION['name']; // Assuming the user's name is stored in the 'name' session variable
     
 ?>
+<!-- Alert msgs -->
+<?php if(isset($_GET['error'])): ?>
+    <div class="alert error">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <?php echo $_GET['error']; ?>
+    </div>
+<?php endif; ?>
+
+<?php if(isset($_GET['success'])): ?>
+    <div class="alert success">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <?php echo $_GET['success']; ?>
+    </div>
+<?php endif; ?>
+<script src="../script/alerts.js"></script>
+<!-- alerts msgs -->
 <div class="app-container">
     <div class="sidebar">
         <div class="sidebar-header"> 

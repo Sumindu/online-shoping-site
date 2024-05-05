@@ -10,7 +10,7 @@ if (isset($_GET['delete'])) {
     $sql = "DELETE FROM users WHERE id = '$delete'";
     
     if(mysqli_query($conn,$sql)) {
-        echo '<script> location.replace("../dash/users.php")</script>'; 
+        echo '<script> location.replace("../dash/users.php?error=Deletion successful")</script>'; 
         exit();
     } else{
         header("Location: ../dash/users.php?error=Database error");
