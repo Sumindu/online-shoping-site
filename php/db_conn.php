@@ -2,10 +2,11 @@
 
 $env = parse_ini_file('../.env');
 
-$servername = getenv('DB_HOST');
-$username = getenv('DB_USERNAME');
-$password = getenv('DB_PASSWORD');
-$dbname = getenv('DB_NAME');
+// Retrieve database configuration from environment variables
+$servername = $env['DB_HOST'];
+$username = $env['DB_USERNAME'];
+$password = $env['DB_PASSWORD'];
+$dbname = $env['DB_NAME'];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
