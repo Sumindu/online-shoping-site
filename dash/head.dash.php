@@ -47,7 +47,7 @@
                 </a>
             </li>
             <li class="sidebar-list-item <?php echo ($currentPage == 'Orders.php') ? 'active' : ''; ?>">
-                <a href="Orders.php">
+                <a href="orders.php">
                     <span>Orders</span>
                 </a>
             </li>
