@@ -59,11 +59,11 @@
                     <span>Feedback</span>
                 </a>
             </li>
-            <li class="sidebar-list-item <?php echo ($currentPage == '.php') ? 'active' : ''; ?>">
+            <!-- <li class="sidebar-list-item <?php echo ($currentPage == '.php') ? 'active' : ''; ?>">
                 <a href="../guestabout.html">
                     <span>About Us</span>
                 </a>
-            </li>
+            </li> -->
         </ul>
     <div class="account-info">
     <div class="account-info-name">Welcome <?php echo $name; ?></div>
