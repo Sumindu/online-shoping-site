@@ -1,6 +1,10 @@
 <?php
 
-$env = parse_ini_file('../.env');
+$rootDir = dirname(__DIR__, 1); // Go up one directory level
+$envPath = $rootDir . '/.env';
+
+// Load environment variables from .env file
+$env = parse_ini_file($envPath);
 
 // Retrieve database configuration from environment variables
 $servername = $env['DB_HOST'];
