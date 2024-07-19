@@ -16,8 +16,8 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        ftp-server: ftp://ftpupload.net
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./ # Directory to deploy from, usually the repository root
-        remote-dir: /path/to/htdocs/mall # Remote directory to deploy to
+        server: ftp://ftpupload.net
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./
+        server-dir: /path/to/htdocs/mall
