@@ -1,4 +1,7 @@
 <?php
+
+$env = parse_ini_file('.env');
+
 $servername = "your_db_host";
 $username = "your_db_username";
 $password = "your_db_password";
