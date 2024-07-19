@@ -1,0 +1,23 @@
+name: Deploy PHP Project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        ftp-server: ftp://ftpupload.net
+        ftp-username: ${{ secrets.if0_36437558 }}
+        ftp-password: ${{ secrets.Ge4a4vfiIjTE4I }}
+        local-dir: ./ # Directory to deploy from, usually the repository root
+        remote-dir: /path/to/htdocs/mall # Remote directory to deploy to
