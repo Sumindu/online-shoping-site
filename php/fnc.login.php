@@ -1,5 +1,5 @@
 <?php
-include "db_conn.php";
+include "../db_conn.php";
 session_start();
 
 if (isset($_POST['email']) && isset($_POST['pass'])) {
