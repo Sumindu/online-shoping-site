@@ -1,5 +1,6 @@
 Completed fully Function online shopping application.
 Contributions are welcome! If you have any questions or encounter any issues, please feel free to contact me at bsumindu@gmail.com
+Live version : https://nexbeast.rf.gd/mall
 # Project Structure
 
 ## Main
